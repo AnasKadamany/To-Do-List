@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+
+}
+.Container{
+    width: 100vw;  
+    height: 100vh; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(./images/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg) ;
+   background-repeat: repeat;
+   background-position: center center;
+}
+.To-Do{
+    width: 100%;
+    min-height: 80%;
+    background:lightskyblue;
+    max-width: 540px;
+    border-radius: 20px;
+}
+.headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.current-time{
+    margin-right:20px;
+}
+h2{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+#icon{
+    margin-top: 0px;
+    padding-top: 45px;
+    padding-left: 10px;
+    width: 40px;
+}
+.Writing-box{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 20px;
+    height: 50px;
+}
+#input-box{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding-left: 25px;
+    
+}
+#Adding-bottom{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+ul li{
+    padding-top: 20px;
+    padding-left: 50px;
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:15px;
+    left:15px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.1rem;
+}
+ul li.checked::before{
+    background-image:url(./images/checked.png);
+}
+ul li button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding-right: 20px;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
